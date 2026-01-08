@@ -67,7 +67,7 @@ function ProductForm() {
             }}
           />
         </label>
-        {errors.name && <span>* {errors.name}</span>}
+        {errors.name && <span className="error-message">* {errors.name}</span>}
       </div>
       <div className="input-container">
         <label>
@@ -82,7 +82,9 @@ function ProductForm() {
             }}
           />
         </label>
-        {errors.image && <span>* {errors.image}</span>}
+        {errors.image && (
+          <span className="error-message">* {errors.image}</span>
+        )}
       </div>
       <div className="input-container">
         <label>
@@ -97,7 +99,9 @@ function ProductForm() {
             }}
           />
         </label>
-        {errors.price && <span>* {errors.price}</span>}
+        {errors.price && (
+          <span className="error-message">* {errors.price}</span>
+        )}
       </div>
       <div className="input-container">
         <label>
@@ -114,7 +118,9 @@ function ProductForm() {
             cols={30}
           />
         </label>
-        {errors.description && <span>* {errors.description}</span>}
+        {errors.description && (
+          <span className="error-message">* {errors.description}</span>
+        )}
       </div>
       <div className="input-container">
         <label>
@@ -129,7 +135,9 @@ function ProductForm() {
             }}
           />
         </label>
-        {errors.email && <span>* {errors.email}</span>}
+        {errors.email && (
+          <span className="error-message">* {errors.email}</span>
+        )}
       </div>
       <div className="form-actions">
         <button type="submit">Create</button>
